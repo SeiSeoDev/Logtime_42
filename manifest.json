@@ -4,7 +4,7 @@
   "name": "42 Phoenix Logtime",
   "description": "get your 42 Logtime By clicking on \"Logtime\" on your intra profile",
   "version": "1.0",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/notify-link-clicks-i18n",
+  "homepage_url": "https://github.com/SeiSeoDev/Logtime_42",
   "icons": {
     "48": "icons/42logo.png"
   },

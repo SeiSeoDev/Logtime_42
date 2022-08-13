@@ -29,7 +29,10 @@ function notifyExtension(e) {
   for(let i = 0; i <= b; i++) {
     totaltime += tominutes(l[i].dataset.originalTitle)
   }
-  ret = parseInt(totaltime / 60) + "h" + totaltime % 60
+  if (totaltime % 60 > 10)
+    ret = parseInt(totaltime / 60) + "h" + totaltime % 60
+  else
+  ret = parseInt(totaltime / 60) + "h0" + totaltime % 60
   if (target.firstChild.data == "\nLogtime\n")
     browser.runtime.sendMessage({"url": ret});
 }
