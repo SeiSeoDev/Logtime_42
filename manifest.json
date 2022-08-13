@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "42 Phoenix Logtime",
+  "description": "get your 42 Logtime By clicking on \"Logtime\" on your intra profile",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/notify-link-clicks-i18n",
+  "icons": {
+    "48": "icons/42logo.png"
+  },
+
+  "permissions": ["notifications"],
+
+  "background": {
+    "scripts": ["background-script.js"]
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["https://profile.intra.42.fr/"],
+      "js": ["content-script.js"]
+    }
+  ],
+  
+  "default_locale": "en"
+}
